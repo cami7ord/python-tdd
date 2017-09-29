@@ -8,3 +8,7 @@ class TestCalculator(TestCase):
 
     def test_sum_string(self):
         self.assertEqual(Calculator().sum("1"), 1, "A number")
+
+    def test_sum_string_with_num(self):
+        self.assertEqual(Calculator().sum("1"), 1, "A number")
+        self.assertEqual(Calculator().sum("2"), 2, "A number")
